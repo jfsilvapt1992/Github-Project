@@ -1,0 +1,17 @@
+.gradle
+**/build/**
+!gradle/wrapper/gradle-wrapper.jar
+/libs/*.jar
+*.env
+**/bin
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+**/out/
+
+/container-build
+/.java-version
+.vscode
