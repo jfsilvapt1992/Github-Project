@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TrinoGatewayTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TrinoGatewayTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.github.gateway.html">com.github.gateway</a> &gt; TrinoGatewayTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.568s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">GET repositories branches  with response 401()</td>
+<td class="success">0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET repositories branches  with response 404()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET repositories branches with response 200()</td>
+<td class="success">1.430s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET user repos with response 200()</td>
+<td class="success">0.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GET user repos with response 401()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:03:00.247 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TrinoGatewayTests]: using SpringBootContextLoader
+20:03:00.255 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.github.gateway.TrinoGatewayTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:03:00.269 [Test worker] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [com.github.gateway.TrinoGatewayTests$Companion]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
+20:03:00.314 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [TrinoGatewayTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, WebTestClientContextCustomizer]
+20:03:00.435 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jose.silva/Documents/Personal Workspace/github/build/classes/kotlin/main/com/github/GithubApplication.class]
+20:03:00.438 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.github.GithubApplication for test class com.github.gateway.TrinoGatewayTests
+20:03:00.573 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+20:03:00.580 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+20:03:00.582 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+20:03:00.585 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [TrinoGatewayTests]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+20:03:00.588 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [TrinoGatewayTests], class annotated with @DirtiesContext [false] with mode [null]
+20:03:00.794 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class com.github.gateway.TrinoGatewayTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T20:03:01.186Z  INFO 9836 --- [    Test worker] com.github.gateway.TrinoGatewayTests     : Starting TrinoGatewayTests using Java 17.0.5 with PID 9836 (started by jose.silva in /Users/jose.silva/Documents/Personal Workspace/github)
+2023-03-16T20:03:01.189Z  INFO 9836 --- [    Test worker] com.github.gateway.TrinoGatewayTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-03-16T20:03:03.316Z  INFO 9836 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 59775
+2023-03-16T20:03:03.327Z  INFO 9836 --- [    Test worker] com.github.gateway.TrinoGatewayTests     : Started TrinoGatewayTests in 2.501 seconds (process running for 4.456)
+2023-03-16T20:03:03.993Z  INFO 9836 --- [er @coroutine#1] com.github.gateways.GithubGateway        : Getting repository Github Apis branches list..
+2023-03-16T20:03:04.776Z  INFO 9836 --- [er @coroutine#3] com.github.gateways.GithubGateway        : Getting repository dummy branches list..
+2023-03-16T20:03:04.782Z  WARN 9836 --- [-3 @coroutine#4] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 401 UNAUTHORIZED
+2023-03-16T20:03:04.783Z  WARN 9836 --- [-3 @coroutine#4] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 401 UNAUTHORIZED
+2023-03-16T20:03:04.803Z  INFO 9836 --- [er @coroutine#5] com.github.gateways.GithubGateway        : Getting repository dummy branches list..
+2023-03-16T20:03:04.807Z  WARN 9836 --- [-3 @coroutine#6] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 404 NOT_FOUND
+2023-03-16T20:03:04.808Z  WARN 9836 --- [-3 @coroutine#6] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 404 NOT_FOUND
+2023-03-16T20:03:04.822Z  INFO 9836 --- [er @coroutine#7] com.github.gateways.GithubGateway        : Getting user jfsilva github repositories..
+2023-03-16T20:03:04.901Z  INFO 9836 --- [er @coroutine#9] com.github.gateways.GithubGateway        : Getting user jfsilva github repositories..
+2023-03-16T20:03:04.906Z  WARN 9836 --- [3 @coroutine#10] com.github.gateways.GithubGateway        : GET /users/jfsilva/repos - 401 UNAUTHORIZED
+2023-03-16T20:03:04.907Z  WARN 9836 --- [3 @coroutine#10] com.github.gateways.GithubGateway        : GET /users/jfsilva/repos - 401 UNAUTHORIZED
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at Mar 16, 2023, 8:03:07 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.interactors.GetUserRepositoriesInteractorTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-16T21:07:23" hostname="PT-360716-MBP16IN4" time="0.058">
+  <properties/>
+  <testcase name="get repositories information when github api returns all repos and this filter the forks()" classname="com.github.interactors.GetUserRepositoriesInteractorTests" time="0.012"/>
+  <testcase name="get repositories information when github api returns only forks()" classname="com.github.interactors.GetUserRepositoriesInteractorTests" time="0.008"/>
+  <testcase name="get repositories information when github api returns empty result()" classname="com.github.interactors.GetUserRepositoriesInteractorTests" time="0.006"/>
+  <testcase name="get repositories information when github api returns only not forks()" classname="com.github.interactors.GetUserRepositoriesInteractorTests" time="0.009"/>
+  <system-out><![CDATA[2023-03-16T21:07:22.120Z  INFO 14706 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.github.interactors.GetUserRepositoriesInteractorTests]: GetUserRepositoriesInteractorTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-16T21:07:22.151Z  INFO 14706 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.github.GithubApplication for test class com.github.interactors.GetUserRepositoriesInteractorTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T21:07:22.213Z  INFO 14706 --- [    Test worker] c.g.i.GetUserRepositoriesInteractorTests : Starting GetUserRepositoriesInteractorTests using Java 17.0.5 with PID 14706 (started by jose.silva in /Users/jose.silva/Documents/Personal Workspace/github)
+2023-03-16T21:07:22.214Z  INFO 14706 --- [    Test worker] c.g.i.GetUserRepositoriesInteractorTests : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T21:07:23.466Z  INFO 14706 --- [    Test worker] c.g.i.GetUserRepositoriesInteractorTests : Started GetUserRepositoriesInteractorTests in 1.292 seconds (process running for 11.555)
+2023-03-16T21:07:23.475Z  INFO 14706 --- [er @coroutine#5] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.476Z  INFO 14706 --- [er @coroutine#5] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.505Z  INFO 14706 --- [er @coroutine#6] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.505Z  INFO 14706 --- [er @coroutine#6] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.515Z  INFO 14706 --- [er @coroutine#7] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.515Z  INFO 14706 --- [er @coroutine#7] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.523Z  INFO 14706 --- [er @coroutine#8] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T21:07:23.524Z  INFO 14706 --- [er @coroutine#8] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

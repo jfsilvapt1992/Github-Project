@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.controllers.RepositoriesControllerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-16T21:07:21" hostname="PT-360716-MBP16IN4" time="0.324">
+  <properties/>
+  <testcase name="get user repositories without github-token()" classname="com.github.controllers.RepositoriesControllerTests" time="0.167"/>
+  <testcase name="get user repositories with success()" classname="com.github.controllers.RepositoriesControllerTests" time="0.122"/>
+  <testcase name="get user repositories with invalid github username()" classname="com.github.controllers.RepositoriesControllerTests" time="0.01"/>
+  <testcase name="get user repositories with success without results()" classname="com.github.controllers.RepositoriesControllerTests" time="0.014"/>
+  <system-out><![CDATA[21:07:14.576 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [RepositoriesControllerTests]: using SpringBootContextLoader
+21:07:14.588 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.github.controllers.RepositoriesControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:07:14.591 [Test worker] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [com.github.controllers.RepositoriesControllerTests$Companion]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
+21:07:14.592 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.github.controllers.RepositoriesControllerTests]: RepositoriesControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:07:14.665 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [RepositoriesControllerTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, WebTestClientContextCustomizer]
+21:07:15.055 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jose.silva/Documents/Personal Workspace/github/build/classes/kotlin/main/com/github/GithubApplication.class]
+21:07:15.067 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.github.GithubApplication for test class com.github.controllers.RepositoriesControllerTests
+21:07:15.617 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+21:07:15.624 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+21:07:15.629 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+21:07:15.634 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [RepositoriesControllerTests]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+21:07:15.636 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [RepositoriesControllerTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T21:07:16.392Z  INFO 14706 --- [    Test worker] c.g.c.RepositoriesControllerTests        : Starting RepositoriesControllerTests using Java 17.0.5 with PID 14706 (started by jose.silva in /Users/jose.silva/Documents/Personal Workspace/github)
+2023-03-16T21:07:16.396Z  INFO 14706 --- [    Test worker] c.g.c.RepositoriesControllerTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T21:07:21.761Z  INFO 14706 --- [    Test worker] c.g.c.RepositoriesControllerTests        : Started RepositoriesControllerTests in 5.969 seconds (process running for 9.85)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

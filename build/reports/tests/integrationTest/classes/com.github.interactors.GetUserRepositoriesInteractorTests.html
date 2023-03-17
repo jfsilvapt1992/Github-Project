@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GetUserRepositoriesInteractorTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GetUserRepositoriesInteractorTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.github.interactors.html">com.github.interactors</a> &gt; GetUserRepositoriesInteractorTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.079s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">get repositories information when github api returns all repos and this filter the forks()</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">get repositories information when github api returns empty result()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">get repositories information when github api returns only forks()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">get repositories information when github api returns only not forks()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-03-16T20:03:04.930Z  INFO 9836 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.github.interactors.GetUserRepositoriesInteractorTests]: GetUserRepositoriesInteractorTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-16T20:03:04.960Z  INFO 9836 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.github.GithubApplication for test class com.github.interactors.GetUserRepositoriesInteractorTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T20:03:05.010Z  INFO 9836 --- [    Test worker] c.g.i.GetUserRepositoriesInteractorTests : Starting GetUserRepositoriesInteractorTests using Java 17.0.5 with PID 9836 (started by jose.silva in /Users/jose.silva/Documents/Personal Workspace/github)
+2023-03-16T20:03:05.010Z  INFO 9836 --- [    Test worker] c.g.i.GetUserRepositoriesInteractorTests : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-03-16T20:03:05.601Z  INFO 9836 --- [    Test worker] c.g.i.GetUserRepositoriesInteractorTests : Started GetUserRepositoriesInteractorTests in 0.63 seconds (process running for 6.73)
+2023-03-16T20:03:05.649Z  INFO 9836 --- [r @coroutine#11] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.657Z  INFO 9836 --- [r @coroutine#11] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.669Z  INFO 9836 --- [r @coroutine#12] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.669Z  INFO 9836 --- [r @coroutine#12] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.680Z  INFO 9836 --- [r @coroutine#13] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.681Z  INFO 9836 --- [r @coroutine#13] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.688Z  INFO 9836 --- [r @coroutine#14] c.g.i.GetUserRepositoriesInteractor      : INIT [getRepositories] interactor user jfsilva
+2023-03-16T20:03:05.689Z  INFO 9836 --- [r @coroutine#14] c.g.i.GetUserRepositoriesInteractor      : END [getRepositories] interactor user jfsilva
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at Mar 16, 2023, 8:03:07 PM</p>
+</div>
+</div>
+</body>
+</html>

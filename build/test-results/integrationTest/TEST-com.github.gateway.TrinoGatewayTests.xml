@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.gateway.TrinoGatewayTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-03-16T20:03:03" hostname="PT-360716-MBP16IN4" time="1.576">
+  <properties/>
+  <testcase name="GET repositories branches with response 200()" classname="com.github.gateway.TrinoGatewayTests" time="1.43"/>
+  <testcase name="GET repositories branches  with response 401()" classname="com.github.gateway.TrinoGatewayTests" time="0.029"/>
+  <testcase name="GET repositories branches  with response 404()" classname="com.github.gateway.TrinoGatewayTests" time="0.011"/>
+  <testcase name="GET user repos with response 200()" classname="com.github.gateway.TrinoGatewayTests" time="0.08"/>
+  <testcase name="GET user repos with response 401()" classname="com.github.gateway.TrinoGatewayTests" time="0.018"/>
+  <system-out><![CDATA[20:03:00.247 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TrinoGatewayTests]: using SpringBootContextLoader
+20:03:00.255 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.github.gateway.TrinoGatewayTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:03:00.269 [Test worker] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [com.github.gateway.TrinoGatewayTests$Companion]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
+20:03:00.314 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [TrinoGatewayTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, WebTestClientContextCustomizer]
+20:03:00.435 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jose.silva/Documents/Personal Workspace/github/build/classes/kotlin/main/com/github/GithubApplication.class]
+20:03:00.438 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.github.GithubApplication for test class com.github.gateway.TrinoGatewayTests
+20:03:00.573 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+20:03:00.580 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+20:03:00.582 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+20:03:00.585 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [TrinoGatewayTests]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+20:03:00.588 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [TrinoGatewayTests], class annotated with @DirtiesContext [false] with mode [null]
+20:03:00.794 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class com.github.gateway.TrinoGatewayTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-16T20:03:01.186Z  INFO 9836 --- [    Test worker] com.github.gateway.TrinoGatewayTests     : Starting TrinoGatewayTests using Java 17.0.5 with PID 9836 (started by jose.silva in /Users/jose.silva/Documents/Personal Workspace/github)
+2023-03-16T20:03:01.189Z  INFO 9836 --- [    Test worker] com.github.gateway.TrinoGatewayTests     : No active profile set, falling back to 1 default profile: "default"
+2023-03-16T20:03:03.316Z  INFO 9836 --- [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 59775
+2023-03-16T20:03:03.327Z  INFO 9836 --- [    Test worker] com.github.gateway.TrinoGatewayTests     : Started TrinoGatewayTests in 2.501 seconds (process running for 4.456)
+2023-03-16T20:03:03.993Z  INFO 9836 --- [er @coroutine#1] com.github.gateways.GithubGateway        : Getting repository Github Apis branches list..
+2023-03-16T20:03:04.776Z  INFO 9836 --- [er @coroutine#3] com.github.gateways.GithubGateway        : Getting repository dummy branches list..
+2023-03-16T20:03:04.782Z  WARN 9836 --- [-3 @coroutine#4] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 401 UNAUTHORIZED
+2023-03-16T20:03:04.783Z  WARN 9836 --- [-3 @coroutine#4] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 401 UNAUTHORIZED
+2023-03-16T20:03:04.803Z  INFO 9836 --- [er @coroutine#5] com.github.gateways.GithubGateway        : Getting repository dummy branches list..
+2023-03-16T20:03:04.807Z  WARN 9836 --- [-3 @coroutine#6] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 404 NOT_FOUND
+2023-03-16T20:03:04.808Z  WARN 9836 --- [-3 @coroutine#6] com.github.gateways.GithubGateway        : GET repos/jfsilva/dummy/branches - 404 NOT_FOUND
+2023-03-16T20:03:04.822Z  INFO 9836 --- [er @coroutine#7] com.github.gateways.GithubGateway        : Getting user jfsilva github repositories..
+2023-03-16T20:03:04.901Z  INFO 9836 --- [er @coroutine#9] com.github.gateways.GithubGateway        : Getting user jfsilva github repositories..
+2023-03-16T20:03:04.906Z  WARN 9836 --- [3 @coroutine#10] com.github.gateways.GithubGateway        : GET /users/jfsilva/repos - 401 UNAUTHORIZED
+2023-03-16T20:03:04.907Z  WARN 9836 --- [3 @coroutine#10] com.github.gateways.GithubGateway        : GET /users/jfsilva/repos - 401 UNAUTHORIZED
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
