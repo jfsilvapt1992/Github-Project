@@ -21,11 +21,13 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.4")
 	implementation("com.google.code.gson:gson:2.10.1")
 	implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.11")
 	implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.0.4")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")

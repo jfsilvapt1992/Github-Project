@@ -23,7 +23,7 @@ import org.springframework.web.server.ResponseStatusException
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class TrinoGatewayTests {
+class GithubGatewayTests {
 
 	@TestConfiguration
 	internal class Config {

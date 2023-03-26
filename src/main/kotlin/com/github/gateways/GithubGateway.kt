@@ -1,7 +1,7 @@
 package com.github.gateways
 
-import com.github.models.BranchDto
-import com.github.models.RepositoryDto
+import com.github.models.Branch
+import com.github.models.Repository
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
@@ -16,7 +16,7 @@ class GithubGateway (
 ) {
     var logger: Logger = LoggerFactory.getLogger(GithubGateway::class.java)
 
-    suspend fun getUserRepositories(userName: String, token: String): List<RepositoryDto> {
+    suspend fun getUserRepositories(userName: String, token: String): List<Repository> {
         logger.info("Getting user $userName github repositories..")
 
         return githubClient
@@ -32,7 +32,7 @@ class GithubGateway (
             } ?: emptyList()
     }
 
-    suspend fun getRepositoryBranches(user:String, repository: String, token: String): List<BranchDto> {
+    suspend fun getRepositoryBranches(user:String, repository: String, token: String): List<Branch> {
         logger.info("Getting repository $repository branches list..")
         return githubClient
             .get()

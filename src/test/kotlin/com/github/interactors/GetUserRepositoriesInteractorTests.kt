@@ -1,10 +1,11 @@
 package com.github.interactors
 
+import com.github.controllers.RepositoriesControllerTests
 import com.github.gateways.GithubGateway
-import com.github.models.BranchDto
-import com.github.models.CommitDto
-import com.github.models.RepositoryDto
-import com.github.models.UserDto
+import com.github.models.Branch
+import com.github.models.Commit
+import com.github.models.Repository
+import com.github.models.User
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
@@ -34,7 +35,7 @@ class GetUserRepositoriesInteractorTests {
 		Mockito.`when`(gateway.getRepositoryBranches(user, notForkRepository.name, token))
 			.thenReturn(listOf(stagingBranch, masterBranch))
 
-		val repositories = interactor.getRepositories(user, token)
+		val repositories = interactor.getRepositories(user, headers)
 
 		assertEquals(1, repositories.size)
 		assertEquals(false, repositories.first().fork)
@@ -49,7 +50,7 @@ class GetUserRepositoriesInteractorTests {
 		Mockito.`when`(gateway.getRepositoryBranches(user, forkedRepository.name, token))
 			.thenReturn(listOf(masterBranch, stagingBranch))
 
-		val repositories = interactor.getRepositories(user, token)
+		val repositories = interactor.getRepositories(user, headers)
 
 		assertEquals(0, repositories.size)
 	}
@@ -65,7 +66,7 @@ class GetUserRepositoriesInteractorTests {
 		Mockito.`when`(gateway.getRepositoryBranches(user, notForkRepository2.name, token))
 			.thenReturn(listOf(masterBranch, stagingBranch))
 
-		val repositories = interactor.getRepositories(user, token)
+		val repositories = interactor.getRepositories(user, headers)
 
 		assertEquals(2, repositories.size)
 		assertEquals(2, repositories.first().branches?.size)
@@ -77,7 +78,7 @@ class GetUserRepositoriesInteractorTests {
 		Mockito.`when`(gateway.getUserRepositories(user, token))
 			.thenReturn(emptyList())
 
-		val repositories = interactor.getRepositories(user, token)
+		val repositories = interactor.getRepositories(user, headers)
 
 		assertEquals(0, repositories.size)
 	}
@@ -86,12 +87,15 @@ class GetUserRepositoriesInteractorTests {
 	companion object {
 		const val user = "jfsilva"
 		const val token = "ghp_xjSljoa36sZM9Ab666sTq4T04itJJV1P9999"
-		val login =  UserDto("534953122", user)
-		val stagingBranch = BranchDto("main", CommitDto("4795c14a0b89636aaa6d7addc4dfd78f112c4a56","https:github.com/commit01"))
-		val masterBranch = BranchDto("master", CommitDto("4795c14a0b89636aaa6d7addc4dfd78f112c4a56","https:github.com/commit01"))
+		private val login =  User("534953122", user)
+		val headers = mapOf("github-token" to token)
 
-		val notForkRepository = RepositoryDto("330391333", "Performance Tests", login, false, emptyList())
-		val notForkRepository2 = RepositoryDto("330391333", "Integration Tests", login, false, emptyList())
-		val forkedRepository = RepositoryDto("330391333", "Github Apis", login, true, emptyList())
+		val stagingBranch = Branch("main", Commit("4795c14a0b89636aaa6d7addc4dfd78f112c4a56","https:github.com/commit01"))
+		val masterBranch = Branch("master", Commit("4795c14a0b89636aaa6d7addc4dfd78f112c4a56","https:github.com/commit01"))
+
+		val notForkRepository = Repository("330391333", "Performance Tests", login, false, emptyList())
+		val notForkRepository2 = Repository("330391333", "Integration Tests", login, false, emptyList())
+		val forkedRepository = Repository("330391333", "Github Apis", login, true, emptyList())
+
 	}
 }

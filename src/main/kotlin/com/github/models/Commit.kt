@@ -1,6 +1,6 @@
 package com.github.models
 
-class CommitDto(
+class Commit(
     val sha: String,
     val url: String
 )
